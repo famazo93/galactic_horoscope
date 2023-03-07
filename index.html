@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Hitchhikers's Guide to Astrology</title>
+        <meta name="hitchhikers guide to astrology" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <div class="title-box">
+            <image src="./resources/universe.jpg" class="image-cropped-calc"></image>
+            <div class="centered"><h1>Your Guide to your Galactic Fate.</h1></div>
+
+        </div>
+        <div class="section">
+            <h3 class="sub-title">If you wish to find out what ordeals await you, fill in your details below.</h3>
+        </div>
+        <form action="story.html" method="GET">
+        <div class="input-field">
+            <p class="input-text">First, we will need to know more about your life form.</p>
+            <label for="life-form">Your life-form:</label>
+            <input list="lf">
+            <datalist id="lf">
+                <option value="Carbon-based"></option>
+                <option value="Acid-based"></option>
+                <option value="Metaphysical"></option>
+                <option value="Aural"></option>
+            </datalist>
+        </div>
+        <div class="input-field">
+            <p class="input-text">How many arms / legs / tentacles do you have in total?</p>
+            <input type="range" value="50" name="tentacles" id="tentacles" min="0" max="100" step="2" oninput="this.nextElementSibling.value = this.value">
+            <output>50</output>
+        </div>
+        <div class="input-field">
+            <p class="input-text">Which part of the Galaxy are you based in?</p>
+            <input type="radio" name="galaxy" id="outer-rim" value="Outer Rim">
+            <label for="outer-rim">Outer Rim</label>
+            <input type="radio" name="galaxy" id="inner-spiral" value="Inner Spiral">
+            <label for="inner-spiral">Inner Spiral</label>
+            <input type="radio" name="galaxy" id="bushwick" value="Bushwick">
+            <label for="bushwick">Bushwick</label>
+        </div>
+        <div class="input-field">
+            <p class="input-text">Last, but not least: where on the galactic time-axis were you born?</p>
+            <select name="time" id="time" style="margin-left: 5px">
+                <option value="galactic-mish-mash">Great Galactic Mish-Mash</option>
+                <option value="standard">Standard Anno Domini</option>
+                <option value="not-sure">Not sure anymore</option>
+            </select>
+        </div>
+        <div id="submit"><input type="submit" value="Submit" onclick="Submit"></div>
+        </form>
+        <script src="main.js"></script>   
+    </body>
+</html>
