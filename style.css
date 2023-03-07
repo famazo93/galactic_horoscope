@@ -43,6 +43,13 @@
     margin-top: 20px;
   }
 
+  .secondary-input-field {
+    border-style: groove;
+    border-width: 5px;
+    margin-top: 20px;
+    display: none;
+  }
+
   .input-text {
     margin-left: 5px;
   }
@@ -51,7 +58,18 @@
     margin-left: 5px;
   }
 
+  #next {
+    text-align: center;
+    margin-top: 20px;
+    display: inline-block;
+  }
+
   #submit {
     text-align: center;
     margin-top: 20px;
+    display: none;
+  }
+
+  #buttons {
+    text-align: center;
   }
