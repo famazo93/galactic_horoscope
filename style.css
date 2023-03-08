@@ -1,16 +1,17 @@
-* {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color:antiquewhite;
-    background-color: darkslategray;
+body, html {
+  height: 100%;
+  font-family: 'Space Grotesk', Verdana, Arial, Helvetica, sans-serif;
+  color:white;
+  background-color: darkslategray;
+  margin: 0;
 }
 
 .title-box {
     position: relative;
     width: 100%;
-    height: 0;
-    padding-top: calc(100% * (100 / 400));
+    height: 100%;
     color: white;
-    font-size: 1.3vw;
+    font-size: 2.5vw;
 }
 
 .image-cropped-calc {
@@ -27,14 +28,77 @@
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: transparent;
+    width: 100%;
+    text-align: center;
+  }
+
+  .scroll {
+    position: absolute;
+    top: 90%;
+    left: 90%;
+    transform: translate(-50%, -50%);
+    background-color: transparent;
+    width: 100%;
+    text-align: center;
+  }
+
+  #title {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center; 
+	  color:darkorchid;
+    font-size: 5vw;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  }
+
+  @media screen and (min-width: 1600px) {
+    #title {
+      position: absolute;
+      top: 35%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100%;
+      text-align: center; 
+      color:darkorchid;
+      font-size: 80px;
+      text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    }
+
+    .title-box {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      color: white;
+      font-size: 40px;
+    }
   }
   
   h1 {
     background-color: transparent;
   }
 
+  a {
+    text-decoration: none;
+    color: white;
+  }
+
   .sub-title {
     text-align: center;
+    font-size: 4.2vw;
+  }
+
+  .reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 2s all ease;
+  }
+  .reveal.active{
+    transform: translateY(0);
+    opacity: 1;
   }
 
   .input-field {

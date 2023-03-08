@@ -7,18 +7,23 @@
         <meta name="hitchhikers guide to astrology" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="./style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Ubuntu:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
         <script type="text/javascript" src="main.js" defer></script>
+        <script type="text/javascript" src="animations.js" defer></script>
     </head>
     <body>
         <div class="title-box">
             <image src="./resources/universe.jpg" class="image-cropped-calc"></image>
+            <div class="centered" id="title"><h1>Galaxify</h1></div>
             <div class="centered"><h1>Your Guide to your Galactic Fate.</h1></div>
-
+            <div class="scroll"><h4><a href="#sub-title">find out.</a></h4></div>
         </div>
-        <div class="section">
-            <h3 class="sub-title">If you wish to find out what ordeals await you, fill in your details below.</h3>
+        <div class="section reveal">
+            <h3 class="sub-title" id="sub-title">If you wish to find out what ordeals await you, fill in your details below.</h3>
         </div>
-        <form action="story.html" method="GET">
+        <form class="reveal" action="story.html" method="GET">
             <div class="input-field" id="first-input">
                 <p class="input-text">First, we will need to know more about your life form.</p>
                 <label for="life-form">Your life-form:</label>
