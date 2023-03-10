@@ -32,38 +32,6 @@ const story = `
 
 
 
-const submitButton = document.getElementById('submit');
-const nextButton = document.getElementById('next');
-
-
-const nextPage = () => {
-    let firstInput = document.getElementById('first-input');
-    firstInput.style.display = "none";
-    
-    let secondInput = document.getElementById('second-input');
-    secondInput.style.display = "none";
-
-    let thirdInput = document.getElementById('third-input');
-    thirdInput.style.display = "none";
-
-    let fourthInput = document.getElementById('fourth-input');
-    fourthInput.style.display = "none";
-
-    let fifthInput = document.getElementById('fifth-input');
-    fifthInput.style.display = "block";
-
-    let sixthInput = document.getElementById('sixth-input');
-    sixthInput.style.display = "block";
-
-    nextButton.style.display = "none";
-    submitButton.style.display = "block";
-    console.log('test');
-};
-
-if(nextButton) {
-nextButton.addEventListener('click',nextPage);
-};
-
 
 // populating story page
 const storyElement = document.getElementById('story');
