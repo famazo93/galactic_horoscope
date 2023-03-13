@@ -11,7 +11,6 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Ubuntu:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
         <script type="text/javascript" src="main.js" defer></script>
-        <script type="text/javascript" src="animations.js" defer></script>
     </head>
     <body>
         <div class="title-box">
@@ -20,55 +19,57 @@
             <div class="centered"><h1>Your Guide to your Galactic Fate.</h1></div>
             <div class="scroll"><h4><a href="#sub-title">find out.</a></h4></div>
         </div>
-        <div class="section reveal">
-            <h3 class="sub-title" id="sub-title">If you wish to find out what ordeals await you, fill in your details below.</h3>
-        </div>
-        <div class="banner reveal"><h4>First, we will need to know more about your life-form.</h4></div>
-        <div class="options reveal">
-            <div class="select" id="carbon"><p>Carbon-Based</p></div>
-            <div class="select" id="acid"><p>Acid-Based</p></div>
-            <div class="select" id="meta"><p>Metaphysical</p></div>
-            <div class="select" id="aural"><p>Aural</p></div>
-        </div>
-        <div class="banner reveal"><h4>How many arms / legs / tentacles do you have?</h4></div>
-        <div class="options reveal">
-            <div class="select" id="four"><p>Less than 4</p></div>
-            <div class="select" id="ten"><p>Less than 10</p></div>
-            <div class="select" id="fifty"><p>Less than 50</p></div>
-            <div class="select" id="centiped"><p>More than 50</p></div>
-        </div>
-        <div class="banner reveal"><h4>Which part of the galaxy are you based in?</h4></div>
-        <div class="options reveal">
-            <div class="select" id="outer-rim"><p>Outer Rim</p></div>
-            <div class="select" id="inner-spiral"><p>Inner Spiral</p></div>
-            <div class="select" id="bushwick"><p>Bushwick</p></div>
-            <div class="select" id="shadow-corner"><p>Shadow Corner</p></div>
-        </div>
-        <div class="banner reveal"><h4>Last, but not least: where on the galactic time-axis were you born?</h4></div>
-        <div class="options reveal">
-            <div class="select" id="mish-mash"><p>Great Galactic<br>Mish-Mash</p></div>
-            <div class="select" id="sic-mundus"><p>Sic Mundus</p></div>
-            <div class="select" id="anno-domini"><p>Standard Anno Domini</p></div>
-            <div class="select" id="unknown"><p>unknown</p></div>
-        </div>
-        <div class="reveal">
-            <div class="banner"><h4>Have you ever drunk a Pan-Galactic Gargle Blaster?</h4></div>
-            <div class="options">
-                <div class="select" id="yes"><p>Yes!</p></div>
-                <div class="select" id="no"><p>Not yet...</p></div>
+        <div id="form">
+            <div class="section reveal">
+                <h3 class="sub-title" id="sub-title">If you wish to find out what ordeals await you, fill in your details below.</h3>
             </div>
-            <div class="options">
-                <form action="story.html" method="GET">
-                    <div class="banner"><h4 id="name-banner">What's your name?</h4></div>
-                    <input id="name" type="text" name="name" required></input>
-                    <div class="button">
-                        <div id="submit"><input type="submit" value="Submit" onclick="Submit"></div>
+            <div class="banner reveal"><h4>First, we will need to know more about your life-form.</h4></div>
+            <div class="options reveal">
+                <div class="select1" id="carbon"><p>Carbon-Based</p></div>
+                <div class="select1" id="acid"><p>Acid-Based</p></div>
+                <div class="select1" id="meta"><p>Metaphysical</p></div>
+                <div class="select1" id="aural"><p>Aural</p></div>
+            </div>
+            <div class="banner reveal"><h4>How many arms / legs / tentacles do you have?</h4></div>
+            <div class="options reveal">
+                <div class="select2" id="four"><p>Less than 4</p></div>
+                <div class="select2" id="ten"><p>Less than 10</p></div>
+                <div class="select2" id="fifty"><p>Less than 50</p></div>
+                <div class="select2" id="centiped"><p>More than 50</p></div>
+            </div>
+            <div class="banner reveal"><h4>Which part of the galaxy are you based in?</h4></div>
+            <div class="options reveal">
+                <div class="select3" id="outer-rim"><p>Outer Rim</p></div>
+                <div class="select3" id="inner-spiral"><p>Inner Spiral</p></div>
+                <div class="select3" id="bushwick"><p>Bushwick</p></div>
+                <div class="select3" id="shadow-corner"><p>Shadow Corner</p></div>
+            </div>
+            <div class="banner reveal"><h4>Last, but not least: where on the galactic time-axis were you born?</h4></div>
+            <div class="options reveal">
+                <div class="select4" id="mish-mash"><p>Great Galactic<br>Mish-Mash</p></div>
+                <div class="select4" id="sic-mundus"><p>Sic Mundus</p></div>
+                <div class="select4" id="anno-domini"><p>Standard Anno Domini</p></div>
+                <div class="select4" id="unknown"><p>unknown</p></div>
+            </div>
+            <div class="reveal">
+                <div class="banner"><h4>Have you ever drunk a Pan-Galactic Gargle Blaster?</h4></div>
+                <div class="options">
+                    <div class="select5" id="yes"><p>Yes!</p></div>
+                    <div class="select5" id="no"><p>Not yet...</p></div>
+                </div>
+                <div class="options">
+                    <div>
+                        <div class="banner"><h4 id="name-banner">What's your name?</h4></div>
+                        <input id="name" type="text" name="name" required></input>
+                        <div class="button">
+                            <button id="submit">Submit</button>
+                        </div>
                     </div>
-                </form>
+                </div>
             </div>
+        </div>
+        <div id="story">
+            <p></p>
         </div>
     </body>
-    <footer>
-        <div></div>
-    </footer>
 </html>
