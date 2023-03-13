@@ -134,7 +134,7 @@ const returnSelection = () => {
     // grabbing selected options
     selection = [checkSelection(option1), checkSelection(option2), checkSelection(option3), checkSelection(option4), checkSelection(option5)];
     lifeForm = selection[0];
-    tentacles = selection[1];
+    tentacles = selection[1].toLowerCase();
     galaxy = selection[2];
     time = selection[3];
 
